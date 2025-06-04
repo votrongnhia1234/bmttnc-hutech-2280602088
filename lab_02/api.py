@@ -59,6 +59,7 @@ def decrypt():
     key = int(data['key'])
     decrypted_text = railfence_cipher.rail_fence_decrypt(cipher_text, key)
     return jsonify({'decrypted_text' : decrypted_text})
+
 #PLAYFAIR CIPHER ALGORITHM
 playfair_cipher = PlayFairCipher()
 
